@@ -9,4 +9,4 @@ RUN apt-get -qq update && \
 
 COPY custom-entrypoint.sh /
 ENTRYPOINT ["/custom-entrypoint.sh"]
-CMD ["cassandra", "-f"]
+CMD ["cassandra", "-f","-R"]
